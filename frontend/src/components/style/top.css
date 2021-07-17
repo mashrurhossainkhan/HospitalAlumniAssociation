@@ -54,7 +54,7 @@ File: Layout CSS
 
 /* Page Intro
 --------------------------------------------------------------------------------------------------------------- */
-#pageintro{padding:200px 0 400px;}/* 400px => 200px for #introblocks negative margin */
+#pageintro{padding:200px 0 350px;}/* 400px => 200px for #introblocks negative margin */
 
 #pageintro article, #pageintro article p{display:block; max-width:75%; margin:0 auto; text-align:center;}
 #pageintro article p{max-width:65%; line-height:2rem;}
