@@ -7,6 +7,7 @@ import Dashboard from './user/Dashboard'
 import AdminRoute from '../components/protectRoutes/AdminRoute';
 import CreateActivity from './admin/CreateActivity';
 import CreateDetail from './admin/CreateDetail';
+import AllUsers from './admin/allUsers';
 import AdminDashboard from './admin/AdminDashboard';
 
 
@@ -29,6 +30,16 @@ const Main = () => {
             <AdminRoute exact path="/create/detail">
                 <CreateDetail />
             </AdminRoute>
+
+            <AdminRoute exact path="/allusers">
+                <AllUsers />
+            </AdminRoute>
+
+            
+
+            
+
+           
         </Switch>
     </div>
     )

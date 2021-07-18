@@ -24,7 +24,7 @@ const AdminDashboard = () => {
                         <Link className="nav-link" to="#">In review users</Link>
                     </li>
                     <li className="list-group-item">
-                        <Link className="nav-link" to="#">All users</Link>
+                        <Link className="nav-link" to="/allusers">All users</Link>
                     </li>
                 </ul>
             </div>
