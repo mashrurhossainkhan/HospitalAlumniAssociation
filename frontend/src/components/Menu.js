@@ -1,6 +1,6 @@
 import {Link, withRouter} from 'react-router-dom';
 import './style/top.css'
-import {signout, isAuthenticated} from '../utils/auth'
+import {signout, isAuthenticated, userInfo} from '../utils/auth'
 
 const isActive = (history, path) => {
   if(history.location.pathname === path){
@@ -75,7 +75,11 @@ const Menu = ({history}) => {
          
             </ul>
           </li>
-          <li><a href="C:\Users\Asus\Desktop\City Dental\CDCAA\form.html">MY PROFILE</a></li>
+        {isAuthenticated() && (<>
+          <li>
+          <Link style={isActive(history, `/${userInfo().role}/dashboard`)} to={`/${userInfo().role}/dashboard`}>Dashboard</Link>
+          </li>
+          </>)}
           <li><a href="#">NEWS</a></li>
           <li><a href="#">NOTICE</a></li>
           <li><a href="C:\Users\Asus\Desktop\City Dental\CDCAA\pages\gallery.html">GALLERY</a></li>
