@@ -29,8 +29,9 @@ const Card = ({ user }) => {
                 <div className="card-body">
                     <div style={{ minHeight: "3em" }}>
                         <p style={titleStyle}>{user.name}</p>
+                        <p style={titleStyle}>{user.UserStatus}</p>
                     <Link to={`/allusers/${user._id}`}>
-                        <button className="btn btn-outline-warning btn-sm">View Details</button>
+                        <button className="btn btn-outline-warning btn-sm">View and Edit Details</button>
                     </Link>
                     </div>
                     

@@ -9,7 +9,7 @@ import CreateActivity from './admin/CreateActivity';
 import CreateDetail from './admin/CreateDetail';
 import AllUsers from './admin/allUsers';
 import AdminDashboard from './admin/AdminDashboard';
-
+import UniqueUser from './admin/UniqueUser';
 
 const Main = () => {
     return (
@@ -19,27 +19,23 @@ const Main = () => {
             <Route path = "/login" exact component={Login} />
             <Route path = "/register" exact component = {Register}/>
             <PrivateRoute exact path="/user/dashboard">
-                    <Dashboard />
+                <Dashboard/>
             </PrivateRoute>
             <AdminRoute exact path="/admin/dashboard">
-                <AdminDashboard />
+                <AdminDashboard/>
             </AdminRoute>
             <AdminRoute exact path="/create/activity">
-                <CreateActivity />
+                <CreateActivity/>
             </AdminRoute>
             <AdminRoute exact path="/create/detail">
-                <CreateDetail />
+                <CreateDetail/>
             </AdminRoute>
-
             <AdminRoute exact path="/allusers">
-                <AllUsers />
+                <AllUsers/>
             </AdminRoute>
-
-            
-
-            
-
-           
+            <AdminRoute exact path="/allusers/:id">
+                <UniqueUser/>
+            </AdminRoute>       
         </Switch>
     </div>
     )
