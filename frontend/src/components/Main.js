@@ -10,6 +10,8 @@ import CreateDetail from './admin/CreateDetail';
 import AllUsers from './admin/allUsers';
 import AdminDashboard from './admin/AdminDashboard';
 import UniqueUser from './admin/UniqueUser';
+import AllDetails  from './admin/allDetails';
+import UserProfile from './user/UserProfile';
 
 const Main = () => {
     return (
@@ -33,9 +35,17 @@ const Main = () => {
             <AdminRoute exact path="/allusers">
                 <AllUsers/>
             </AdminRoute>
+
+            <PrivateRoute exact path="/userprofile/:id">
+                <UserProfile/>
+            </PrivateRoute>
+
             <AdminRoute exact path="/allusers/:id">
                 <UniqueUser/>
             </AdminRoute>       
+            <AdminRoute exact path="/detail">
+                <AllDetails/>
+            </AdminRoute>      
         </Switch>
     </div>
     )

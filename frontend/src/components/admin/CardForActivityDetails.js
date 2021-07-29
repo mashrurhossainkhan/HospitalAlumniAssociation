@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { API } from '../../utils/config';
-
-import {deleteUser} from '../../api/apiUsers'
 import { userInfo } from '../../utils/auth';
+import { deleteDetails } from '../../api/apiUsers'
 
-const Card = ({ user }) => {
+
+const Card = ({ detail }) => {
 
     const titleStyle = {
         display: "block",
@@ -20,23 +19,28 @@ const Card = ({ user }) => {
         objectFit: "cover",
         objectPosition: "0px 0px"
     }
+    const deleteDetailss = (user) => () => {
+        console.log(user._id);
+       if(!window.confirm("Delete User?")) return
+       deleteDetails (userInfo().token, user)
 
+        window.location.replace("/detail");           
+    }
   
     return (
+        
         <div className="col-md-3 col-sm-4 col-xs-12 mb-3">
             <div className="card">
-               
+             
                 <div className="card-body">
                     <div style={{ minHeight: "3em" }}>
-                        <p style={titleStyle}>{user.name}</p>
-                        <p style={titleStyle}>{user.UserStatus}</p>
-                    <Link to={`/allusers/${user._id}`}>
-                        <button className="btn btn-outline-warning btn-sm">View and Edit Details</button>
-                    </Link>
-
+                        <p style={titleStyle}>{detail.activity.name}</p>
+                        <p style={titleStyle}>{detail.name}</p>
+                        
                     
-                   
+                        <button className="btn-danger btn-outline-danger btn-sm" onClick={deleteDetailss(detail)}>Delete</button>
                     
+    
                     </div>
                     
                 </div>

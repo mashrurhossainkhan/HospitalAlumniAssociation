@@ -46,7 +46,7 @@ const Login = () => {
         .catch(err =>{
             let errMsg = 'Something Went Wrong';
             if(err.response){
-                errMsg = err.response.data;
+                errMsg = 'Something Went Wrong!';
             }else{
                 errMsg = 'Something Went Wrong!';
             }

@@ -41,6 +41,7 @@ const Register = () => {
         register({name, email, batchNo, BMDCregNo ,phoneNo ,bloodGroup,ChamberName,Designation,Address,password,TransactionID})
         .then(response => {
            //write the success message here
+           
             setValues({
                 name: '',
                 email: '',
@@ -61,21 +62,24 @@ const Register = () => {
         .catch(err => {
             let errMsg = 'Something Went Wrong!';
             if(err.response) {
-                errMsg = err.response.data;
+                errMsg = 'Something Went Wrong!';
             }else{
                 errMsg = "Something Went Wrong";
             }
             setValues({...values, error: errMsg, disabled: false, loading: false})
         })
+        alert("Registration Complete!");
     }
 
     const signUpForm = () => (
         <div className="hero">
+            
         <div className="form-box">
             <div className="button-box">
                 <div id="btn"></div>
                 <button type="button" class="toggle-btn" onclick="register()">Register</button>
             </div>
+            
         <form onSubmit={handleSubmit} id="login" className="input-group">
             <input type="text" placeholder="Your Name" name="name" className="input-field" value={name} required onChange={handleChange} />
             <input type="email" placeholder="Email" name="email" className="input-field" value={email} required onChange={handleChange} />
@@ -90,7 +94,12 @@ const Register = () => {
             <input type="text" placeholder="Transaction ID" name="TransactionID" className="input-field" value={TransactionID} required onChange={handleChange} />
 
             <button type="submit" class="btn btn-primary" disabled={disabled}>REGISTER</button>
+            
+                    <a href="/login" class="toggle-btn">already have Account?</a>
+           
+           
         </form>
+  
         </div>
       </div>
       
@@ -103,6 +112,7 @@ const Register = () => {
             {showError(error, error)}
             <h3>Register Here</h3>
             {signUpForm()}
+            
         </Layout>
     );
 }
