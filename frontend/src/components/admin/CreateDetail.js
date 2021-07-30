@@ -101,9 +101,14 @@ const CreateDetail = () => {
             <h4>Photo:</h4>
             <div className="form-group">
                 <label className="btn btn-secondary">
+                <label for="file-upload" className="custom-file-upload">
+                        <i class="fa fa-cloud-upload" style={{color: "white"}}></i> Upload Photo
+                    </label>
                     <input
+                        id="file-upload"
                         type="file"
                         name="photo"
+                        style={{width: '100vw'}}
                         onChange={handleChange}
                         accept="image/*"
                         

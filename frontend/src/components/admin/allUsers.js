@@ -20,7 +20,7 @@ const AllUsers = () => {
     }, [])
 
     return (
-        <Layout title="Home Page" className="container-fluid">
+        <Layout title="All " className="container-fluid">
             
             <div style={{ width: "100%" }}>
                 

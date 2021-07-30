@@ -12,6 +12,7 @@ import AdminDashboard from './admin/AdminDashboard';
 import UniqueUser from './admin/UniqueUser';
 import AllDetails  from './admin/allDetails';
 import UserProfile from './user/UserProfile';
+import DetailsOfActivity from './user/DetailsOfActivity'
 
 const Main = () => {
     return (
@@ -20,6 +21,7 @@ const Main = () => {
             <Route path="/" exact component={Home} />
             <Route path = "/login" exact component={Login} />
             <Route path = "/register" exact component = {Register}/>
+            <Route path = "/details/:id" exact component = {DetailsOfActivity}/>
             <PrivateRoute exact path="/user/dashboard">
                 <Dashboard/>
             </PrivateRoute>

@@ -61,16 +61,16 @@ const Menu = ({history}) => {
           <li class="active"><a href="/"><b>Home</b></a></li>
           <li><a class="drop" href="#">ORGANIZATION</a>
             <ul>
-              <li><a href="pages/gallery.html">Journey of CDCAA</a></li>
-              <li><a href="pages/full-width.html">Excutive Committee</a></li>
-              <li><a href="pages/sidebar-left.html">Sub Committee</a></li>
-              <li><a href="pages/sidebar-right.html">Past Leaders</a></li>
+              <li><a href="/details/60f3c1239151b21308dc0ab0">Journey of CDCAA</a></li>
+              <li><a href="/details/60f3c1389151b21308dc0ab2">Excutive Committee</a></li>
+              <li><a href="/details/60f3c13f9151b21308dc0ab4">Sub Committee</a></li>
+              <li><a href="/details/60f3c14a9151b21308dc0ab6">Past Leaders</a></li>
               
             </ul>
           </li>
           <li><a class="drop" href="#">Activities</a>
             <ul>
-              <li><a href="#">Soical Responsibilites</a></li>
+              <li><a href="/details/60f3c0c99151b21308dc0aaa">Soical Responsibilites</a></li>
             
          
             </ul>
@@ -80,10 +80,10 @@ const Menu = ({history}) => {
           <Link style={isActive(history, `/${userInfo().role}/dashboard`)} to={`/${userInfo().role}/dashboard`}>Dashboard</Link>
           </li>
           </>)}
-          <li><a href="#">NEWS</a></li>
-          <li><a href="#">NOTICE</a></li>
-          <li><a href="C:\Users\Asus\Desktop\City Dental\CDCAA\pages\gallery.html">GALLERY</a></li>
-          <li><a href="#">CONTACT US</a></li>
+          <li><a href="/details/60f3c0369151b21308dc0aa3">NEWS</a></li>
+          <li><a href="/details/60f3c0b79151b21308dc0aa8">NOTICE</a></li>
+          <li><a href="/details/60f3c1559151b21308dc0ab8">GALLERY</a></li>
+          <li><a href="/details/60f3c3b49151b21308dc0ac4">CONTACT US</a></li>
 
          
         </ul>

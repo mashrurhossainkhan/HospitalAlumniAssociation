@@ -34,8 +34,9 @@ const Card = ({ detail }) => {
              
                 <div className="card-body">
                     <div style={{ minHeight: "3em" }}>
-                        <p style={titleStyle}>{detail.activity.name}</p>
-                        <p style={titleStyle}>{detail.name}</p>
+                        <p style={titleStyle} style={{color: "black"}}>{detail.activity.name}</p>
+                        <p style={titleStyle} style={{color: "powderblue"}}>{detail.name}</p>
+                        <p style={titleStyle}>{detail.description}</p>
                         
                     
                         <button className="btn-danger btn-outline-danger btn-sm" onClick={deleteDetailss(detail)}>Delete</button>

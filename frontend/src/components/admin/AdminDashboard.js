@@ -15,7 +15,7 @@ const AdminDashboard = () => {
             <Photo/>
             <br/><br/><br/>
             <div className="card">
-                <h4 className="card-header">User Links</h4>
+                <h4 className="card-header" style={{color: "black"}}>User Links</h4>
                 <ul className="list-group">
                
                     <li className="list-group-item">
@@ -56,22 +56,22 @@ const AdminDashboard = () => {
 
     const UserInfo = () => (
         <div className="card mb-5">
-            <h3 className="card-header">User Information</h3>
+            <h3 className="card-header" style={{color: "black"}}>User Information</h3>
             <ul className="list-group">
-            <li className="list-group-item">ID: {_id}</li>
-                <li className="list-group-item">Name: {name}</li>
-                <li className="list-group-item">Email: {email}</li>
-                <li className="list-group-item">Role: {role}</li>
-                <li className="list-group-item">Address: {Address}</li>
-                <li className="list-group-item">BMDC registration No: {BMDCregNo}</li>
-                <li className="list-group-item">Chamber Name: {ChamberName}</li>
-                <li className="list-group-item">Designation: {Designation}</li>
-                <li className="list-group-item">User Status: {UserStatus}</li>
-                <li className="list-group-item">User Type: {UserType}</li>
-                <li className="list-group-item">Batch No: {batchNo}</li>
-                <li className="list-group-item">Blood Group: {bloodGroup}</li>
-                <li className="list-group-item">Phone No: {phoneNo}</li>
-                <li className="list-group-item">Registration Date: {timeRemain}</li>
+            <li className="list-group-item" style={{color: "black"}}>ID: {_id}</li>
+                <li className="list-group-item" style={{color: "black"}}>Name: {name}</li>
+                <li className="list-group-item" style={{color: "black"}}>Email: {email}</li>
+                <li className="list-group-item" style={{color: "black"}}>Role: {role}</li>
+                <li className="list-group-item" style={{color: "black"}}>Address: {Address}</li>
+                <li className="list-group-item" style={{color: "black"}}>BMDC registration No: {BMDCregNo}</li>
+                <li className="list-group-item" style={{color: "black"}}>Chamber Name: {ChamberName}</li>
+                <li className="list-group-item" style={{color: "black"}}>Designation: {Designation}</li>
+                <li className="list-group-item" style={{color: "black"}}>User Status: {UserStatus}</li>
+                <li className="list-group-item" style={{color: "black"}}>User Type: {UserType}</li>
+                <li className="list-group-item" style={{color: "black"}}>Batch No: {batchNo}</li>
+                <li className="list-group-item" style={{color: "black"}}>Blood Group: {bloodGroup}</li>
+                <li className="list-group-item" style={{color: "black"}}>Phone No: {phoneNo}</li>
+                <li className="list-group-item" style={{color: "black"}}>Registration Date: {timeRemain}</li>
             </ul>
         </div>
     );

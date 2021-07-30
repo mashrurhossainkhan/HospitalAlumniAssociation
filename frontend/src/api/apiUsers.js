@@ -42,6 +42,14 @@ export const deleteDetails = (token, data) => {
     }
 }
 
+export const details = (id) => {
+    return axios.get(`${API}/detail/details/${id}`)
+}
+
+export const detailsHomePage = (id) => {
+    return axios.get(`${API}/detail/home/${id}`)
+}
+
 
 
 

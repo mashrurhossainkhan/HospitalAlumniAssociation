@@ -5,6 +5,9 @@ import pic4 from '../img/pic4.jpg'
 import pic21 from '../img/pic21.jpg'
 import {Link, withRouter} from 'react-router-dom';
 import {isAuthenticated, signout} from './auth'
+import Aboutus from './aboutus';
+import Events from './Events';
+import Tribute from './Tribute';
 
 const Home = ({history}) => {
     return (
@@ -37,7 +40,8 @@ const Home = ({history}) => {
       </article>
       
     </div>
-
+    <div class="wrapper row3">
+  <main class="hoc container clear"> 
    <section id="introblocks">
       <ul class="nospace group btmspace-80">
         <li class="one_third first">
@@ -70,10 +74,16 @@ const Home = ({history}) => {
             </figcaption>
           </figure>
         </li>
-        
-      </ul>
+      </ul>      
     </section>
-        </Layout>
+    <Aboutus/>
+    <Events/>
+    
+    
+    </main>
+    <Tribute/>
+    </div>
+    </Layout>
     )
 }
 export default withRouter (Home);
