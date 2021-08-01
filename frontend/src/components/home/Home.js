@@ -8,12 +8,16 @@ import {isAuthenticated, signout} from './auth'
 import Aboutus from './aboutus';
 import Events from './Events';
 import Tribute from './Tribute';
+import Executive from './Executive';
+import Sponsor from './Sponsor';
+import Recommendation from './Recommendation';
+import Notice from './notice';
 
 const Home = ({history}) => {
     return (
         <Layout title="Home page" className="container-fluid">
-             <div id="pageintro" class="hoc clear" style={{backgroundImage: `url(${pic21})`,backgroundRepeat: 'no-repeat',backgroundSize: 'contain',
-            overflow: 'hidden', opacity: 0.5}}> 
+             <div id="pageintro" class="hoc clear" style={{backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%),url(${pic21})`,backgroundRepeat: 'no-repeat',backgroundSize: 'contain',
+            overflow: 'hidden'}}> 
       
       <article>
         <h3 class="heading">City Dental Alumni Association</h3>
@@ -82,8 +86,13 @@ const Home = ({history}) => {
     
     </main>
     <Tribute/>
+    <Executive/>
+    <Sponsor/>
+    <Recommendation/>
+    <Notice/>
     </div>
     </Layout>
+    
     )
 }
 export default withRouter (Home);

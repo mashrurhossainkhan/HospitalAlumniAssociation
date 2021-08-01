@@ -7,6 +7,7 @@ import { userInfo } from '../../utils/auth';
 import {API} from '../../utils/config'
 import unnamed from '../img/image/unnamed.jpg'
 import './style/style.css'
+import Footer from '../home/footer'
 
 const Photo = () => {
     const [values, setValues] = useState({
@@ -123,6 +124,7 @@ const Photo = () => {
                     {detailForm()}
                     </div>
                 </div>
+               
             </div>
      
     );

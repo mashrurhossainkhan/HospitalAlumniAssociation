@@ -4,7 +4,7 @@ import { getUserDetails, updateProfile,deleteUser } from '../../api/apiUsers'
 import { userInfo } from '../../utils/auth';
 import {API} from '../../utils/config'
 import './style/style.css'
-
+import Footer from '../home/footer'
 const UniqueUser = () => {
     let str = window.location.href;
     const myArr = str.split('/');
@@ -190,6 +190,7 @@ const UniqueUser = () => {
                 </div>
                 
             </div>
+            <Footer/>
         </Layout>
     </>);
 }

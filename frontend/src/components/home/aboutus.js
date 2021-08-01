@@ -4,18 +4,17 @@ import '../style/framework.css'
 import {API} from '../../utils/config'
 import { useState, useEffect } from 'react'
 import {detailsHomePage} from '../../api/apiUsers'
+
 const Aboutus = () =>{
 const[values, setAboutus] = useState([{}]);
-var executed = false;
 
-    useEffect(()=> {
-       
+  useEffect(()=> { 
         detailsHomePage("60f3f33e9151b21308dc0b0c")
             .then(response => setAboutus(response.data))
             .catch (err => {})
       
-    })
-
+    },[])
+  
     return(
         <div class="wrapper row3">
         <main class="hoc container clear"> 

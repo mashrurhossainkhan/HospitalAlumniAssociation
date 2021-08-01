@@ -1,1 +1,3 @@
-1) infinite call in nodejs for homepage
+things to do:
+1) paginations
+2) read more options for homepage and other pages

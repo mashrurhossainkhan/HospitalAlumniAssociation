@@ -1,0 +1,29 @@
+.flex-container{
+	margin: 50px 0;
+	display: flex;
+	/*flex-direction: row;
+	flex-wrap: wrap;*/
+	/*we can use flex-flow instead of these two lines*/
+	flex-flow: row wrap;
+}
+
+.flex-item{
+	margin: 30px;
+	padding: 10px;
+	width: 300px;
+	
+}
+
+.flex-item1{
+	margin: 30px;
+	padding: 10px;
+	width: 200px;
+}
+
+.center1 {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 30vw;
+	}
+		
